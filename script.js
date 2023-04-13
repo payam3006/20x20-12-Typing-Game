@@ -2,6 +2,7 @@ q = console.log;
 
 let answer = "";
 const totalTime = 20;
+const easeLevel = 2;
 let time = totalTime;
 let score = 0;
 
@@ -63,12 +64,12 @@ function setAnswer() {
 
 function addTime() {
   if (difficultyElem.value == "Easy") {
-    time += 5;
+    time += 5 * easeLevel;
   } else {
     if (difficultyElem.value == "Medium") {
-      time += 3;
+      time += 3 * easeLevel;
     } else {
-      time += 2;
+      time += 2 * easeLevel;
     }
   }
 }
