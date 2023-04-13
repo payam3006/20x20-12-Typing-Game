@@ -7,7 +7,7 @@ let time = totalTime;
 let score = 0;
 
 const words = [
-  "Lorem",
+  "lorem",
   "ipsum",
   "dolor",
   "sit",
