@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="difficulty" class="difficulty">
+        <label for="select">Difficulty</label>
+        <select name="select" id="select">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+    </div>
+
+    <main id="mainBox">
+        <div id="gameBox">
+            <h2>
+                👩‍💻 Speed Typer 👨‍💻
+            </h2>
+            <div id="notification">
+                <div id="timeLeft" class="timeLeft">
+                    Time left: 9s
+                </div>
+                <div id="score" class="score">
+                    Score: 0
+                </div>
+            </div>
+            <div id="game">
+                <p>
+                    Type the following:
+                </p>
+                <h1 id="answer">
+                    drag
+                </h1>
+                <input type="text" id="text" placeholder="Type the word here..." autofocus>
+            </div>
+        </div>
+        <div id="endBox" style="display: none;">
+            <h1>Time ran out</h1>
+            <p id="finalScore">your final score is 8</p>
+            <button id="reload" onclick="reloadGame()">reload</button>
+        </div>
+    </main>
+    <button id="settings" onclick="toggleDifficulty()"><i class="fa fa-cog"></i></button>
+    <script src="./script.js"></script>
+</body>
+
+</html>
